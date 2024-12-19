@@ -1,0 +1,129 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.lists-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.list-checkbox {
+  margin-bottom: 10px;
+}
+
+.create-list-button,
+.update-button,
+.cancel-button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  font-size: 18px;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.update-button {
+  background-color: #008cba;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.creation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+.listText {
+  font-size: 45px;
+}
+button {
+  width: 100%;
+  max-width: 200px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .lists-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .create-list-button,
+  .update-button,
+  .cancel-button {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+/* For very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  .list-container {
+    max-width: 100%;
+  }
+
+  .create-list-button,
+  .update-button,
+  .cancel-button {
+    width: 50%;
+    font-size: 18px;
+  }
+}

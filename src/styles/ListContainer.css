@@ -1,0 +1,80 @@
+.list-container-wrapper {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 16px; 
+    padding: 20px;
+    overflow-x: auto; 
+  }
+  
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    width: calc(16.66% - 16px); 
+    min-width: 200px; 
+    max-height: 500px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .list-container-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+    text-align: center; 
+  }
+  
+  @media (max-width: 1200px) {
+    .list-container {
+      width: calc(25% - 16px); 
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .list-container {
+      width: calc(33.33% - 16px); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .list-container {
+      width: calc(50% - 16px); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list-container {
+      width: 100%; 
+    }
+  }
+.lists-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: flex-start; 
+  padding: 16px;
+}
+
+.list-container {
+  width: calc(20% - 12px); 
+  min-width: 150px; 
+  box-sizing: border-box;
+}
+
+.list-container h3 {
+  text-align: center;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}

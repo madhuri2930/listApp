@@ -1,0 +1,27 @@
+.failure-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .failure-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .retry-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .retry-button:hover {
+    background-color: #218838;
+  }
+  
